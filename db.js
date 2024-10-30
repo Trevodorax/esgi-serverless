@@ -18,6 +18,7 @@ const sequelize = new Sequelize(
   },
 )
 
+console.log('Init db', process.env.DB_CONNECTION_STRING)
 sequelize.authenticate()
 sequelize.sync()
 
